@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/tizim_Fragment">
+
+    <fragment
+        android:id="@+id/tizim_Fragment"
+        android:name="com.example.registretionhome.screens.Tizim_Fragment"
+        android:label="fragment_tizim_"
+        tools:layout="@layout/fragment_tizim_" >
+        <action
+            android:id="@+id/action_tizim_Fragment_to_royxatgaotishFragment"
+            app:destination="@id/royxatgaotishFragment" />
+        <action
+            android:id="@+id/action_tizim_Fragment_to_royxatanotganlarFragment"
+            app:destination="@id/royxatanotganlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/royxatanotganlarFragment"
+        android:name="com.example.registretionhome.screens.RoyxatanotganlarFragment"
+        android:label="fragment_royxatanotganlar"
+        tools:layout="@layout/fragment_royxatanotganlar" />
+    <fragment
+        android:id="@+id/royxatgaotishFragment"
+        android:name="com.example.registretionhome.screens.RoyxatgaotishFragment"
+        android:label="fragment_royxatgaotish"
+        tools:layout="@layout/fragment_royxatgaotish" >
+        <action
+            android:id="@+id/action_royxatgaotishFragment_to_royxatanotganlarFragment"
+            app:destination="@id/royxatanotganlarFragment" />
+    </fragment>
+</navigation>

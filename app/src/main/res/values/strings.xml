@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RegistretionHome</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="d">Ro’yxatdan o’tish</string>
+    <string name="tizimga_kirish">Tizimga kirish</string>
+    <string name="manzil">Manzil</string>
+    <string name="parol">Parol</string>
+    <string name="ro_yxatdan_o_tish">Ro’yxatdan o’tish</string>
+    <string name="tvroyxat">Ro’yxatdan o’tgan foy dalanuvchilar</string>
+    <string name="sardor_turdaliev">Sardor Turdaliev</string>
+    <string name="te">+998916575264</string>
+</resources>

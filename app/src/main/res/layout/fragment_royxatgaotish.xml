@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical"
+    tools:context=".screens.RoyxatgaotishFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Ro‘yxatdan o‘tish "
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle1"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_1" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edt_ism_fam"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_edt"
+        android:hint="Ism, familiya"
+        android:padding="20dp"
+        android:textColorHint="#303B4F" />
+
+    <EditText
+        android:id="@+id/edt_tel_raqam"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_edt"
+        android:hint="Telefon raqam"
+        android:padding="20dp"
+        android:textColorHint="#303B4F" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_marginTop="15dp"
+        android:hint="Davlat"
+        android:textColorHint="#303B4F"
+        android:background="@drawable/bg_edt"
+        app:boxStrokeWidth="0dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/spinner_davlat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/edt_manzil"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_edt"
+        android:hint="@string/manzil"
+        android:padding="20dp"
+        android:textColorHint="#303B4F" />
+
+    <EditText
+        android:id="@+id/edt_parol"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginHorizontal="39dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_edt"
+        android:hint="@string/parol"
+        android:padding="20dp"
+        android:textColorHint="#303B4F" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_royxatanotish"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginHorizontal="39dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/ro_yxatdan_o_tish"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
